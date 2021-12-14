@@ -172,12 +172,12 @@ class Toyyibpay
         $data = [
             'form_params' => [
                 'userSecretKey' => $user_secret_key,
-                'billBankID' => $bill_object->billBankID,
-                'billCode' => $bill_object->billCode,
-                'billpaymentAmount' => $bill_object->billpaymentAmount ?? '',
-                'billpaymentPayorName' => $bill_object->billpaymentPayorName ?? '',
-                'billpaymentPayorPhone' => $bill_object->billpaymentPayorPhone ?? '',
-                'billpaymentPayorEmail' => $bill_object->billpaymentPayorEmail ?? '',
+                'billBankID' => $bill_object['billBankID'],
+                'billCode' => $bill_object['billCode'],
+                'billpaymentAmount' => $bill_object['billpaymentAmount'] ?? '',
+                'billpaymentPayorName' => $bill_object['billpaymentPayorName'] ?? '',
+                'billpaymentPayorPhone' => $bill_object['billpaymentPayorPhone'] ?? '',
+                'billpaymentPayorEmail' => $bill_object['billpaymentPayorEmail'] ?? '',
             ]
         ];
 
