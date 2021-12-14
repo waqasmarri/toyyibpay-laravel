@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqasmarri\Toyyibpay\Tests;
+namespace waqasmarri\Toyyibpay\Tests;
 
 use waqasmarri\Toyyibpay\ToyyibpayServiceProvider;
 
