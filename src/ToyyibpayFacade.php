@@ -1,6 +1,6 @@
 <?php
 
-namespace Tarsoft\Toyyibpay;
+namespace waqasmarri\Toyyibpay;
 
 use Illuminate\Support\Facades\Facade;
 

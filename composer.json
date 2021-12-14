@@ -11,21 +11,21 @@
     ],
     "autoload": {
         "psr-4": {
-            "Tarsoft\\Toyyibpay\\": "src/"
+            "waqasmarri\\Toyyibpay\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tarsoft\\Toyyibpay\\Tests\\": "tests/"
+            "waqasmarri\\Toyyibpay\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tarsoft\\Toyyibpay\\ToyyibpayServiceProvider"
+                "waqasmarri\\Toyyibpay\\ToyyibpayServiceProvider"
             ],
             "aliases": {
-                "Toyyibpay": "Tarsoft\\Toyyibpay\\ToyyibpayFacade"
+                "Toyyibpay": "waqasmarri\\Toyyibpay\\ToyyibpayFacade"
             }
         }
     },

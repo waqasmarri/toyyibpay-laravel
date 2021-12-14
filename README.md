@@ -9,14 +9,14 @@ For complete API usage, some endpoints need `User Secret Key`. For staging/testi
 To install the package within your laravel project use the following composer command:
 
 ```
-composer require tarsoft/toyyibpay
+composer require waqasmarri/toyyibpay
 ```
 
 
 ## Publish ToyyibPay Config File
 
 ```
-php artisan vendor:publish --provider="Tarsoft\Toyyibpay\ToyyibpayServiceProvider"
+php artisan vendor:publish --provider="waqasmarri\Toyyibpay\ToyyibpayServiceProvider"
 ```
 
 ## Environment Credential Setup
@@ -36,13 +36,13 @@ If you're using Laravel 5.5+ you don't need to manually add the service provider
 #### Provider
 
 ```php
-Tarsoft\Toyyibpay\ToyyibpayServiceProvider::class,
+waqasmarri\Toyyibpay\ToyyibpayServiceProvider::class,
 ```
 
 #### Alias / Facade
 
 ```php
-'Toyyibpay' => Tarsoft\Toyyibpay\ToyyibpayFacade::class,
+'Toyyibpay' => waqasmarri\Toyyibpay\ToyyibpayFacade::class,
 ```
 
 ## Usage

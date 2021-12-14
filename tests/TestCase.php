@@ -1,8 +1,8 @@
 <?php
 
-namespace Tarsoft\Toyyibpay\Tests;
+namespace waqasmarri\Toyyibpay\Tests;
 
-use Tarsoft\Toyyibpay\ToyyibpayServiceProvider;
+use waqasmarri\Toyyibpay\ToyyibpayServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

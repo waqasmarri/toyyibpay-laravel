@@ -1,8 +1,8 @@
 <?php
 
-namespace Tarsoft\Toyyibpay\Tests\Unit;
+namespace waqasmarri\Toyyibpay\Tests\Unit;
 
-use Tarsoft\Toyyibpay\Tests\TestCase;
+use waqasmarri\Toyyibpay\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
