@@ -1,6 +1,6 @@
 <?php
 
-namespace waqasmarri\Toyyibpay;
+namespace Waqasmarri\Toyyibpay;
 
 use Illuminate\Support\Facades\Facade;
 

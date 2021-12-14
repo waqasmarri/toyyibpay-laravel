@@ -1,6 +1,6 @@
 <?php
 
-namespace waqasmarri\Toyyibpay\Tests\Feature;
+namespace Waqasmarri\Toyyibpay\Tests\Feature;
 
 use waqasmarri\Toyyibpay\Tests\TestCase;
 

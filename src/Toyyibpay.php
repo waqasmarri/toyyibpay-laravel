@@ -1,6 +1,6 @@
 <?php
 
-namespace waqasmarri\Toyyibpay;
+namespace Waqasmarri\Toyyibpay;
 
 class Toyyibpay
 {
@@ -135,22 +135,22 @@ class Toyyibpay
             'form_params' => [
                 'categoryCode' => $code,
                 'userSecretKey' => $user_secret_key,
-                'billName' => $bill_object->billName,
-                'billDescription' => $bill_object->billDescription,
-                'billPriceSetting' => $bill_object->billPriceSetting,
-                'billPayorInfo' => $bill_object->billPayorInfo,
-                'billAmount' => $bill_object->billAmount,
-                'billReturnUrl' => $bill_object->billReturnUrl ?? $this->redirect_uri,
-                'billCallbackUrl' => $bill_object->billCallbackUrl ?? $this->redirect_uri,
-                'billExternalReferenceNo' => $bill_object->billExternalReferenceNo,
-                'billTo' => $bill_object->billTo,
-                'billEmail' => $bill_object->billEmail,
-                'billPhone' => $bill_object->billPhone,
-                'billSplitPayment' => $bill_object->billSplitPayment ?? 0,
-                'billSplitPaymentArgs' => $bill_object->billSplitPaymentArgs ?? '',
-                'billPaymentChannel' => $bill_object->billPaymentChannel ?? '0',
-                'billContentEmail' => $bill_object->billContentEmail ?? '',
-                'billChargeToCustomer' => $bill_object->billChargeToCustomer ?? 1,
+                'billName' => $bill_object['billName'],
+                'billDescription' => $bill_object['billDescription'],
+                'billPriceSetting' => $bill_object['billPriceSetting'],
+                'billPayorInfo' => $bill_object['billPayorInfo'],
+                'billAmount' => $bill_object['billAmount'],
+                'billReturnUrl' => $bill_object['billReturnUrl'] ?? $this->redirect_uri,
+                'billCallbackUrl' => $bill_object['billCallbackUrl'] ?? $this->redirect_uri,
+                'billExternalReferenceNo' => $bill_object['billExternalReferenceNo'],
+                'billTo' => $bill_object['billTo'],
+                'billEmail' => $bill_object['billEmail'],
+                'billPhone' => $bill_object['billPhone'],
+                'billSplitPayment' => $bill_object['billSplitPayment'] ?? 0,
+                'billSplitPaymentArgs' => $bill_object['billSplitPaymentArgs'] ?? '',
+                'billPaymentChannel' => $bill_object['billPaymentChannel'] ?? '0',
+                'billContentEmail' => $bill_object['billContentEmail'] ?? '',
+                'billChargeToCustomer' => $bill_object['billChargeToCustomer'] ?? 1,
             ]
         ];
 
@@ -203,16 +203,16 @@ class Toyyibpay
         $data = [
             'form_params' => [
                 'enterpriseUserSecretKey' =>  $this->enterprise_secret_key,
-                'fullname' => $user_object->fullname,
-                'username' => $user_object->username,
-                'email' => $user_object->email,
-                'password' => $user_object->password,
-                'phone' => $user_object->phone,
-                'bank' => $user_object->bank,
-                'accountNo' => $user_object->accountNo,
-                'accountHolderName' => $user_object->accountHolderName,
-                'registrationNo' => $user_object->registrationNo,
-                'package' => $user_object->package ?? 2
+                'fullname' => $user_object['fullname'],
+                'username' => $user_object['username'],
+                'email' => $user_object['email'],
+                'password' => $user_object['password'],
+                'phone' => $user_object['phone'],
+                'bank' => $user_object['bank'],
+                'accountNo' => $user_object['accountNo'],
+                'accountHolderName' => $user_object['accountHolderName'],
+                'registrationNo' => $user_object['registrationNo'],
+                'package' => $user_object['package'] ?? 2
             ]
         ];
 
@@ -230,7 +230,7 @@ class Toyyibpay
         $data = [
             'form_params' => [
                 'enterpriseUserSecretKey' =>  $this->enterprise_secret_key,
-                'username' => $user_object->username
+                'username' => $user_object['username']
             ]
         ];
 
@@ -247,8 +247,8 @@ class Toyyibpay
 
         $data = [
             'form_params' => [
-                'userSecretKey' =>  $user_object->userSecretKey,
-                'userName' => $user_object->username
+                'userSecretKey' =>  $user_object['userSecretKey'],
+                'userName' => $user_object['username']
             ]
         ];
 
