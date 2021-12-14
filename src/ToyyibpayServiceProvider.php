@@ -38,6 +38,7 @@ class ToyyibpayServiceProvider extends ServiceProvider
             return new Toyyibpay(
                 config('toyyibpay.sandbox'),
                 config('toyyibpay.client_secret'),
+                config('toyyibpay.enterprise_secret'),
                 config('toyyibpay.redirect_uri'),
                 $client
             );
